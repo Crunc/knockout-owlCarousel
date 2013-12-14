@@ -3,7 +3,8 @@
  * This file contains custom KnockoutJS bindings for OWL Carousel (http://owlgraphic.com/owlcarousel/).
  * It is a wrapper for the built in 'template' binding.
  *
- * @author Hauke Jaeger, hauke.jaeger@googlemail.com
+ * @author      Hauke Jaeger, hauke.jaeger@googlemail.com
+ * @license     MIT http://www.opensource.org/licenses/mit-license.php
  * ****************************************************************************************************
  */
 ;(function(factory) {
@@ -115,7 +116,7 @@
         update: function (element, valueAccessor, allBindingsAccessor, viewModel, bindingContext) {
             // the options that have been configured with the owlCarousel binding
             var options = ko.utils.unwrapObservable(valueAccessor());
-            
+
             // the bound element as a jQuery object
             var $elem = $(element);
 
