@@ -21,7 +21,7 @@ Basic usage
 <div 
   id="myCarousel" 
   class="owl-carousel"
-  data-bind="owlCarousel: { data: myItems }">
+  data-bind="owlCarousel: { data: myItems, owlOptions: { singleItem: true, afterMove: onCarouselMoved } }">
   
   <img data-bind="attr: { src: url, title: name, alt: name }" />
   
@@ -34,5 +34,9 @@ var MyViewModel = function () {
     { name: 'Image 2',  url: 'images/image_2.png' },
     { name: 'Image 3',  url: 'images/image_3.png' },
   ]);
+
+  this.onCarouselMoved = function () {
+    console.log("The carousel moved!");
+  };
 };
 ```
