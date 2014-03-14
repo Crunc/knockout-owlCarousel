@@ -32,6 +32,12 @@
 
         // recalculate internal values
         owl.calculateAll();
+        
+        // refresh pagination
+        owl.updatePagination();
+        
+        // refresh the controls block (make it visible)
+        owl.updateControls();
     };
 
     /**
